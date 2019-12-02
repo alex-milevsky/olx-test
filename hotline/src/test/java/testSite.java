@@ -8,6 +8,6 @@ public class testSite {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();driver.get("https://www.olx.ua/");
-        driver.findElement(By.id("headerSearch")).sendKeys("телевизор" + Keys.ENTER);
+        driver.findElement(By.id("headerSearch")).sendKeys("телевизор samsung" + Keys.ENTER);
     }
 }
