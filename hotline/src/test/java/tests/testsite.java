@@ -15,7 +15,7 @@ public class testsite {
         WebDriver driver = new ChromeDriver();driver.get("https://hotline.ua/");
         WebElement okButton = driver.findElement(By.cssSelector(".btn-graphite.m_b-md"));
         okButton.click();
-     //   driver.manage().timeouts(). setScriptTimeout (10, TimeUnit.SECONDS);
+        driver.manage().timeouts(). setScriptTimeout (10, TimeUnit.SECONDS);
 
         driver.findElement(By.id("searchbox")).sendKeys("телевизор" + Keys.ENTER);
         WebElement element1 = (WebElement) driver.findElements(By.linkText("СРАВНИТЬ ЦЕНЫ"));
